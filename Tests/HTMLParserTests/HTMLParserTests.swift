@@ -3,8 +3,4 @@ import XCTest
 
 final class HTMLParserTests: XCTestCase {
     func testExample() { }
-
-    static var allTests = [
-        ("testExample", testExample),
-    ]
 }

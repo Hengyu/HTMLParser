@@ -6,10 +6,10 @@ import PackageDescription
 let package = Package(
     name: "HTMLParser",
     products: [
-        .library(name: "HTMLParser", targets: ["HTMLParser"]),
+        .library(name: "HTMLParser", targets: ["HTMLParser"])
     ],
     targets: [
         .target(name: "HTMLParser", dependencies: []),
-        .testTarget(name: "HTMLParserTests", dependencies: ["HTMLParser"]),
+        .testTarget(name: "HTMLParserTests", dependencies: ["HTMLParser"])
     ]
 )
