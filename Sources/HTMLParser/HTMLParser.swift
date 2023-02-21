@@ -125,7 +125,7 @@ public final class HTMLParser {
             )
         }
 
-        if let docPtr = docPtr {
+        if let docPtr {
             self.docPtr = docPtr
         } else {
             return nil

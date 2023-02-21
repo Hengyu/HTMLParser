@@ -116,7 +116,7 @@ public final class HTMLNode {
             return String(cString: name)
         }
         set {
-            if let newValue = newValue {
+            if let newValue {
                 xmlNodeSetName(nodePtr, newValue)
             }
         }
@@ -219,7 +219,7 @@ public final class HTMLNode {
     }
 
     internal static func setValue(_ newValue: String?, forAttribute attribute: String, in nodePointer: xmlNodePtr) {
-        if let newValue = newValue {
+        if let newValue {
             xmlSetProp(nodePointer, attribute, newValue)
         } else {
             xmlUnsetProp(nodePointer, attribute)
