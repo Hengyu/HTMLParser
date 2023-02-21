@@ -25,7 +25,7 @@
 import Foundation
 import libxml2
 
-public enum HTMLNodeType {
+public enum HTMLNodeType: CaseIterable, Codable, Equatable, Sendable {
     case href
     case text
     case unknown
@@ -41,7 +41,7 @@ public enum HTMLNodeType {
     case blockquote
 }
 
-public final class HTMLNode {
+public final class HTMLNode: Sendable {
 
     private var node: xmlNode { nodePtr.pointee }
     private let nodePtr: xmlNodePtr

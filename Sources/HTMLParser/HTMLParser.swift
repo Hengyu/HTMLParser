@@ -72,7 +72,7 @@ extension CFStringEncodings {
     }
 }
 
-public final class HTMLParser {
+public final class HTMLParser: Sendable {
 
     private let docPtr: htmlDocPtr
 
